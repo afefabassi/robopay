@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-image: url('{% static 'image/aveclogo.png' %}');">
+        <section>
+            <header>
+                <h2>     </h2>
+                <div class="navigation">
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'contact' %}">Contact Us</a>
+    </div>
+    </header>
+    <div class="content">
+        <div class="info">
+            <h2>Association Robotique ENSI <br><span>RoboCup Pay!</span></h2>
+            <p>Bienvenue à RoboCup Pay!<br>
+                L’association est très heureuse de vous voir participer à cette édition RoboCup.<br>
+                Nous vous souhaitons bonne chance.<br>
+                Pour vérifier votre paiement, veuillez cliquer sur le bouton ci-dessous.<br></p>
+            <a href="{% url 'formulaire' %}" class="info-btn">Verifier!</a>
+        </div>
+    </div>
+    </div>
+    <div class="media-icons">
+        <a href="https://www.facebook.com/association.robotique.ensi/?locale=fr_FR" target="_blank"><img
+                src="{% static 'image/facebook-3-24.png' %}"></a>
+        <a href="https://www.instagram.com/association.robotique.ensi/?hl=fr" target="_blank"><img
+                src="{% static 'image/instagram-24.png' %}"></a>
+        <a href="https://www.linkedin.com/company/cr-ensi/" target="_blank"><img
+                src="{% static 'image/linkedin-3-24.png' %}"></a>
+        <a href="https://www.youtube.com/@associationrobotiqueensi8646" target="_blank"><img
+                src="{% static 'image/youtube-3-24.png' %}"></a>
+
+
+    </div>
+
+    </section>
+
+</body>
+
+</html>
