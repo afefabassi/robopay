@@ -1,0 +1,88 @@
+#form{
+    background-image: url('/static/image/aveclogo.png');
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Manrope', sans-serif;
+    
+    background-size: cover;
+    /*display: block;*/
+
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #121212;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid #E2AC0D;
+
+    
+
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type="text"], .box input[type="number"], .box input[type="file"],.box input[type="email"], .box label {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #E2AC0D;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus, .box input[type="number"]:focus, .box input[type="email"]:focus{
+    width: 280px;
+    border-color: #E2AC0D;
+}
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #E2AC0D;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+.box input[type="submit"]:hover{
+    background: #E2AC0D;
+    margin-top: 30px;
+    
+}
+.box label{
+    display: block;
+    color: grey;
+    font-size: 0.8em;
+    margin-top: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box input[type="file"]{
+    display: none;
+}
+img{
+    width: 15%;
+    display: inline-block;
+}

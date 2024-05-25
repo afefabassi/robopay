@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html,lang="en" dir="ltr">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/form.css' %}">
+        <meta charset="ult-8">
+        <title>formulaire</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-image: url('{% static 'image/aveclogo.png' %}');">
+        <form class="box"  method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h1>Remplir ce forumlaire</h1>
+            <input type="text" id="prenom" name="prenom" placeholder="Nom et Prénom">
+            <input type="email" id="email" name="email" placeholder="email">
+            <input type="number" id="montant" name="montant" placeholder="Montant payé" min="0">
+            <input type="file" name="image" accept="image/*" >
+            <label for="file"><img src="{% static 'image/upload.png' %}" alt="upload photo"> &nbsp;photo du reçu</label>
+            <h6>&nbsp;</h6>
+            <input type="submit" name="submit" value="SUIVANT">
+
+        </form>
+        
+    </body>
+</html>
